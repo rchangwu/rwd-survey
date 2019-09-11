@@ -7,7 +7,7 @@ main {
     max-width: 700px;
     background-color: rgb(255, 227, 185);
     font-size: 20px;
-    text-align: center;
+    
     border-radius: 10px;
     padding: 20px;
 }
@@ -16,31 +16,40 @@ h1 {
     text-align: center;
 }
 
-.rowTab {
-    display: block;
-    margin: 10px;
-    
-}
-
-.label {
-    display: inline-block;
-    font-size: 15px;
-    text-align: right;
-    width: 40%;
-}
-
-.inputField {
-    display: inline-block;
-    text-align: left;
-    width: 40%;
-}
-
 input {
     border: 1px solid #c0c0c0;
     border-radius: 3px;
     padding: 3px;
 }
 
+select {
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.rowTab {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.label {
+    display: inline-block;
+    font-size: 15px;
+    text-align: right;
+    width: 49%;
+    padding-right: 5px;
+}
+
+.inputField {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+}
+
 .radio-opt{
     display: block;
+    font-size: 15px;
 }
