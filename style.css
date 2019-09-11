@@ -1,55 +1,75 @@
 body {
-    font-family: 'Bree serif', serif;
-}
-
-main {
-    margin: auto;
-    max-width: 700px;
-    background-color: rgb(255, 227, 185);
-    font-size: 20px;
-    
-    border-radius: 10px;
-    padding: 20px;
+    font-family: 'Bree serif', sans-serif;
 }
 
 h1 {
     text-align: center;
+    font-size: 40px;
+}
+
+p {
+    margin: 0px;
+}
+
+label {
+    margin: 0px;
+    font-size: 1.5em;
 }
 
 input {
-    border: 1px solid #c0c0c0;
-    border-radius: 3px;
-    padding: 3px;
+    margin: 0px;
+    height: 30px;
 }
 
-select {
-    border: 1px solid #c0c0c0;
-    border-radius: 3px;
-    padding: 3px;
+#name, #email, #number {
+    min-width: 200px;
 }
 
-.rowTab {
+
+.row {
+    margin: 10px 0 10px 0;
     display: flex;
-    margin: 10px;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: nowrap;
 }
 
-.label {
-    display: inline-block;
-    font-size: 15px;
-    text-align: right;
-    width: 49%;
-    padding-right: 5px;
-}
-
-.inputField {
-    display: inline-block;
-    text-align: left;
+.row-left {
+    padding: 10px;
     width: 50%;
+    text-align: right;
+    align-self: center;
 }
 
-.radio-opt{
-    display: block;
-    font-size: 15px;
+.row-right {
+    padding: 10px;
+    width: 50%;
+    text-align: left;
+    align-self: center;
 }
+
+#survey-form {
+    padding: 20px;
+    background-color: rgb(134, 134, 255);
+    max-width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.radio-opt, .chk-opt {
+    display: block;
+}
+
+.radio-btn, .chk-btn {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#description {
+    text-align: center;
+    font-size: 30px;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+}
+

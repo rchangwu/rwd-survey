@@ -1,76 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     </head>
     <body>
-        
+
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-        
+                
         <h1 id="title">Overwatch Survey</h1>
 
-        <main>
-            <p id="description">This form is to assess people's opinion of Overwatch</p>
+        <form id="survey-form">
 
-            <form id="survey-form">
+            <p id="description">Do you have what it takes to be an Overwatch Pro?</p>
+            
+            <div class="row">
+                <div class="row-left">
+                    <label id="name-label">name:</label>
+                </div>
+                <div class="row-right">
+                    <input id="name" type="text" required placeholder="enter name">
+                </div>
+            </div>
 
-                <div class="rowTab">
-                    <div class="label">
-                        <label id="name-label" for="name">* Name: </label>
-                    </div>
-                    <div class="inputField">
-                        <input id="name" type="text" placeholder="enter your name" required>
-                    </div>
+            <div class="row">
+                <div class="row-left">
+                    <label id="email-label">email:</label>
                 </div>
+                <div class="row-right">
+                    <input id="email" type="email" required placeholder="enter email">
+                </div>
+            </div>
 
-                <div class="rowTab">
-                    <div class="label">
-                        <label id="email-label" for="email">* Email: </label>
-                    </div>
-                    <div class="inputField">
-                        <input id="email" type="email" placeholder="enter your email" required>
-                    </div>
+            <div class="row">
+                <div class="row-left">
+                    <label id="number-label">current sr:</label>
                 </div>
-                    
-                <div class="rowTab">
-                    <div class="label">
-                        <label id="number-label" for="sr">* Current SR: </label>
-                    </div>
-                    <div class="inputField">
-                        <input id="sr" type="number" min="0" max="5000"  placeholder="enter your sr" required>
-                    </div>
+                <div class="row-right">
+                    <input id="number" type="number" required min="0" max="5000" placeholder="enter sr">
                 </div>
-                
-                <div class="rowTab">
-                    <div class="label">
-                        <label for="role">* Preferred Role: </label>
-                    </div>
-                    <div class="inputField">
-                        <select id="dropdown">
-                            <option>Tank</option>
-                            <option>DPS</option>
-                            <option>Support</option>
-                        </select>
-                    </div>
-                </div>
+            </div>
 
-                <div class="rowTab">
-                    <div class="label">
-                        <label for="radio">* Favorite Hero</label>
-                    </div>
-                    <div class="inputRadio">
-                        <label class="radio-opt" for="lucio"><input id="lucio" type="radio" name="favhero">Lucio</label>
-                        <label class="radio-opt" for="dva"><input id="dva" type="radio" name="favhero">DVa</label>
-                        <label class="radio-opt" for="tracer"><input id="tracer" type="radio" name="favhero">Tracer</label>
-                    </div>
+            <div class="row">
+                <div class="row-left">
+                    <label>favorite role:</label>
                 </div>
-                
-                
+                <div class="row-right">
+                    <select id="dropdown">
+                        <option>Tank</option>
+                        <option>DPS</option>
+                        <option>Support</option>
+                    </select>
+                </div>
+            </div>
 
-                <input id="submit" type="submit">
-            </form>
-        </main>
+            <div class="row">
+                <div class="row-left">
+                    <label>favorite hero:</label>
+                </div>
+                <div class="row-right">
+                    <label class="radio-opt" for="lucio"><input class="radio-btn" id="lucio" type="radio" name="favhero" value="lucio">Lucio</label>
+                    <label class="radio-opt" for="dva"><input class="radio-btn" id="dva" type="radio" name="favhero" value="dva">DVa</label>
+                    <label class="radio-opt" for="tracer"><input class="radio-btn" id="tracer" type="radio" name="favhero" value="tracer">Tracer</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-left">
+                    <label>which map is not like the rest?:</label>
+                </div>
+                <div class="row-right">
+                    <label class="chk-opt" for="rialto"><input class="chk-btn" id="rialto" type="checkbox" name="map" value="rialto">Rialto</label>
+                    <label class="chk-opt" for="busan"><input class="chk-btn" id="busan" type="checkbox" name="map" value="busan">Busan</label>
+                    <label class="chk-opt" for="havana"><input class="chk-btn" id="havana" type="checkbox" name="map" value="havana">Havana</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-left">
+                    <label id="number-label">explain why:</label>
+                </div>
+                <div class="row-right">
+                    <textarea></textarea>
+                </div>
+            </div>
+
+            <input id="submit" type="submit">
+
+        </form>
 
     </body>
 </html>
